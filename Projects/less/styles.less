@@ -1,0 +1,35 @@
+@text-color: black;
+
+body {
+    background-color: orange;
+}
+
+h1, h2{
+    .bodered;
+}
+
+.text-centre-aligned {
+    color      : @text-color;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align : center;
+    .on-hover(@text-color);
+}
+
+.bodered{
+    // border-top: solid 5px white;
+    border-bottom: solid 5px white;
+}
+
+.on-hover(@x) {
+    &:hover {
+        color: green;
+    }
+}
+
+.text-color(@x) when (lightness(@x) >=50%) {
+    color: black;
+}
+
+.text-color(@x) when (lightness(@x) < 50%) {
+    color: white;
+}

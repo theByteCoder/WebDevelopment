@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first webpage">
+    <meta name="author" content="Subhasish.Ghosh">
+    <meta name="keywords" content="HTML">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Subh's webpage</title>
+    <h1 class="thick-red-border" id="header-text">This is my first webpage</h1>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --grey-color: gray;
+        }
+
+        [type='radio'] {
+            margin: 20px;
+        }
+
+        [type='checkbox'] {
+            margin: 10px 40px 10px 40px;
+        }
+
+        body {
+            background-color: var(--grey-color);
+        }
+
+        .thick-red-border {
+            border-color: red;
+            border-width: 5px;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: silver;
+            padding: 20px 10px 20px 10px;
+            margin: 20px 10px 20px 10px;
+        }
+
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+            /* padding: 20px 10px 20px 10px; */
+            margin: 5px 0px 5px 0px;
+        }
+
+        #header-text {
+            font-family: Great Vibes, monospace;
+        }
+
+        p {
+            color: #0F0;
+            font-family: Great Vibes, monospace;
+        }
+
+        td {
+            color: yellow;
+        }
+
+        .white-text {
+            color: rgb(218, 112, 214) !important;
+        }
+
+        .green-text {
+            color: greenyellow;
+            font-size: 30px;
+            font-family: monospace;
+        }
+
+        .larger-image {
+            width: 400px;
+        }
+    </style>
+    <hr>
+    <p>Block element : First Paragraph (Block elements take up the entire width of the line)</p>
+    <p class="white-text green-text">Block element : Second Paragraph</p>
+    <div class="white-text">Block element : First Div container</div>
+    <div class="white-text">Block element : Second Div container</div>
+    <span class="green-text">Inline element : First span container</span>
+    <span>Inline element : Seconf span container</span>
+    <hr />
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <label>Textarea</label>
+        <textarea rows="2" cols="20">This is a text area</textarea>
+        <br>
+        <label>Date</label>
+        <input type="date">
+        <br>
+        <label>Email</label>
+        <input type="email">
+        <br>
+        <label>Range</label>
+        <input type="range">
+        <br>
+        <label>File</label>
+        <input type="file">
+        <br>
+        <label>Checkbox</label>
+        <input type="checkbox" name="Checkbx">
+        <input type="checkbox" name="Checkbx">
+        <br>
+        <label>Radiobutton</label>
+        <input type="radio" name="Radiobtn">
+        <input type="radio" name="Radiobtn">
+        <input type="submit" name="Submitbtn">
+    </form>
+    <iframe src="https://www.mikedane.com/" frameborder="0" width="1000" height="100">Sorry</iframe>
+    <ol style="color: lightblue;" type="a">
+        <li>
+            <a href="https://www.google.com/" target="_blank">
+                <img class="larger-image thick-green-border" src="/Image.png" height="100" alt="PNG Image 404">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com/" target="_blank">
+                <img src="/Image.jpg" height="100" alt="JPG Image 404">
+            </a>
+        </li>
+        <li>
+            <dl>
+                <dt><iframe width="560" height="315" src="https://www.mikedane.com/" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></dt>
+                <dd>This is an embeded youtube video</dd>
+            </dl>
+        </li>
+    </ol>
+    <table>
+        <thead>
+            <caption>This is list of numbers</caption>
+            <tr>
+                <th colspan="2">Number 1</th>
+                <th colspan="2">Number 2</th>
+                <th colspan="2">Number 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">One</td>
+                <td colspan="2">two</td>
+                <td colspan="2">three</td>
+            </tr>
+            <tr>
+                <td colspan="2">four</td>
+                <td colspan="2">five</td>
+                <td colspan="2">six</td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        .grid1 {
+            background: green;
+        }
+
+        .grid2 {
+            background: white;
+            align-self: end;
+        }
+
+        .grid3 {
+            background: orange;
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+
+        .grid4 {
+            background: red;
+            justify-self: center;
+        }
+
+        @media(min-width: 400px) {
+            .grid-container {
+                grid-template-areas:
+                    "header"
+                    "advert"
+                    "content"
+                    "footer";
+                font-size: 50px;
+                width: 100%b;
+                background: transparent;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+                grid-template-rows: 100px 100px 100px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-gap: 20px 10px;
+            }
+        }
+
+        @media(min-width: 300px) {
+            .grid-container {
+                grid-template-areas:
+                    "header header"
+                    "advert content"
+                    "footer footer";
+                font-size: 50px;
+                width: 100%b;
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                flex-direction: row-reverse;
+                flex-direction: column-reverse;
+                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+                grid-template-rows: 100px 100px 100px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-gap: 20px 10px;
+            }
+        }
+    </style>
+    <div class="grid-container">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        <div class="grid3">3</div>
+        <div class="grid3">4</div>
+        <div class="grid4">5</div>
+        <div class="grid1">6</div>
+    </div>
+</body>
+
+</html>

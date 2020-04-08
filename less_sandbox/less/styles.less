@@ -1,0 +1,71 @@
+// variables
+@background-color: #f4f4f4;
+@primary-color   : red;
+@secondary-color : #20B2AA;
+@font-family     : tahoma;
+@line-height     : 1em+1em;
+
+body {
+    background : @background-color;
+    font-family: @font-family;
+    line-height: @line-height ;
+}
+
+h1,
+h3 {
+    .bordered
+}
+
+.btn {
+    padding: 10px 15px;
+    border : 0;
+    .border-radius(30px)
+}
+
+.bordered {
+    border-top   : dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+// text color mixins
+.text-color(@x) when (lightness(@x) >=50%) {
+    color: black;
+}
+
+.text-color(@x) when (lightness(@x) < 50%) {
+    color: white;
+}
+
+ul#menu {
+    list-style      : none;
+    background-color: lighten(@secondary-color, 30%);
+
+    li {
+        padding: 10px 0;
+
+        a {
+            color          : @primary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+
+.primary-btn:extend(.btn) {
+    background: @secondary-color;
+    .text-color(@secondary-color)
+}
+
+.primary-text {
+    color: @primary-color;
+    &:hover {
+        color: blue;
+    }
+}

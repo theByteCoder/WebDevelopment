@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is my first webpage">
+  <meta name="author" content="Subhasish.Ghosh">
+  <meta name="keywords" content="HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First HTML</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+  </script>
+  <h1>Login webpage</h1>
+</head>
+
+<body style="background-color: lightblue">
+  <hr>
+  <!-- header -->
+  <header>This is Login wepage.
+    <div class="form">
+      <h2>Animated Input</h2>
+      <label for="name" class="label-name">
+        <span class="content-name">Name</span>
+      </label>
+      <input type="text" name="name" autocomplete="off" required />
+    </div>
+  </header>
+  <hr />
+  <!-- Input -->
+  <label style="font-family: Georgia, 'Times New Roman', Times, serif"><b><i>Inputs</i></b></label>
+  <br><br>
+  <!-- form acts as a wrapper for inpput tags -->
+  <form>
+    <label>Username</label>
+    <input type="text" placeholder="Enter username" />
+    <br><br>
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" />
+    <br><br>
+    <label>Textarea</label>
+    <textarea type="text" rows="2" cols="10" placeholder="Enter text in textarea"></textarea>
+    <br><br>
+    <!-- <label>Date</label> -->
+    <!-- <input type="date" /> -->
+    <p>Date: <input type="text" id="datepicker"></p>
+    <br><br>
+    <label>Email</label>
+    <input type="email" />
+    <br><br>
+    <label>Range</label>
+    0<input type="range" />255
+    <br><br>
+    <label>Checkbox</label>
+    <input name="chekbx" type="checkbox" />
+    <input name="chekbx" type="checkbox" />
+    <input name="chekbx" type="checkbox" />
+    <br><br>
+    <label>Radio button</label>
+    <input name="rdiobtn" type="radio" />
+    <input name="rdiobtn" type="radio" />
+    <input name="rdiobtn" type="radio" />
+    <br><br>
+    <label>File</label>
+    <input type="file" />
+  </form>
+  <hr>
+  <iframe src="https://www.mikedane.com/" id="iframeid" height="500" width="800" frameborder="0">Sorry</iframe>
+  <hr />
+</body>
+
+</html>

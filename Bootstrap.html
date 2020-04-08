@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="First bootstrap project">
+    <meta name="author" content="Subhasish.Ghosh">
+    <meta name="keywords" content="Bootstrap, HTML">
+    <meta name="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .jumbotron {
+            background-color: gray;
+        }
+    </style>
+    <div class="container">
+        <div class="page-header">
+            <h1>Bootstrap</h1>
+        </div>
+        <div class="jumbotron">
+            <p>First bootstrap paragraph</p>
+            <p>
+                <a rel="stylesheet" href="index.html" class="btn btn-info" role="button">Index page</a>
+                <input type="submit" value="info" class="btn btn-info">
+                <button type="submit" class="btn-primary btn-lg">Primary</button>
+                <button type="submit" class="btn btn-success btn-sm">Success</button>
+                <a rel="stylesheet" href="#" class="btn btn-warning btn-danger">Warning</a>
+                <button type="submit" class="btn btn-link btn-xs">Link</button>
+                <button type="button" class="btn btn-lg btn-primary" disabled>Primary disabled</button>
+                <a href="#" class="btn btn-lg btn-default disabled" role="button">Link</a>
+                <div>
+                    <button role="button" class="btn btn-lg btn-default btn-primary">Button group 1 of 1</button>
+                    <button type="button" class="btn btn-xs btn-danger disabled">Button group 2 of 1</button>
+                    <button class="btn btn-primary btn-success" !disabled>Button group 3 of 1</button>
+                </div>
+                <p>
+                    <div>
+                        <input type="button" class="btn btn-primary btn-default" value="Large Button group 1 of 2"
+                            name="" id="">
+                        <a role="button" class="btn btn-xs btn-danger">Extra-small Button group 2 of 2</a>
+                        <button class="btn btn-sucess btn-sm" style="background-color: #0F0;">Medium Button group 3 of
+                            2</button>
+                    </div>
+                </p>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><a href="#col1" data-toggle="collapse">Column 1</a></h4>
+                <div id="col1" class="collapse in">This is row 1 of column 1 text
+                    This is row 2 of column 1 text</div>
+            </div>
+            <div class="clearfix visible-sm"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><a href="#col2" data-toggle="collapse">Column 2</a></h4>
+                <div id="col2" class="collapse in">This is column 2 text</div>
+            </div>
+            <div class="clearfix visible-sm"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><a href="#col3" data-toggle="collapse">Column 3</a></h4>
+                <div id="col3" class="collapse in">This is column 3 text</div>
+            </div>
+            <div class="clearfix visible-sm"></div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><a href="#col4" data-toggle="collapse">Column 4</a></h4>
+                <div id="col4" class="collapse in">This is column 4 text</div>
+            </div>
+            <div class="clearfix visible-sm"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
